@@ -60,7 +60,7 @@ RUN sudo apt update && sudo apt install locales \
 
 ARG ROSDIST=jazzy
 ARG GZDIST=harmonic
-ENV GZ_VERSION harmonic
+ENV GZ_VERSION=harmonic
 
 # Install Gazebo and ROS2 Desktop
 RUN sudo wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg \
