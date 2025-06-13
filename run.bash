@@ -52,7 +52,7 @@ ROCKER_ARGS="--devices /dev/dri $JOY --dev-helpers --nvidia --x11 --user --home 
 while getopts ":cstxhir" option; do
   case $option in
     c) # enable cuda library support and mount home directory
-      CUDA="--cuda "
+      CUDA="--cuda"
       ROCKER_ARGS="${ROCKER_ARGS} --volume $(echo ~):/home/docker";;
     i) # With internal graphics card (without nvidia)
       ROCKER_ARGS="--devices /dev/dri $JOY --x11 --user --home --git";;
